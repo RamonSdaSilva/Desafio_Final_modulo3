@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+<body>
+  <header class="header">
+    <nav>
+      <a href="#" class="logo"> <i class="fas fa-paw"></i> PetShop </a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clientes.html">Cadastros</a></li>
+        <li><a href="Loja.html">Loja</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="content-home">
+      <h3><span>Olá</span> Bem Vindo ao Pet Shop</h3>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1" d="M0,256L60,224C120,192,240,128,360,101.3C480,75,600,85,720,117.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </section>
+    <h1>Agendar consulta</h1>
+    <form id="cadastroForm">
+      <label for="tutorNome">Nome do Tutor:</label>
+      <input type="text" id="tutorNome" required>
+      
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" required>
+      
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" required>
+      
+      <label for="dataAtendimento">Data do Atendimento:</label>
+      <input type="date" id="dataAtendimento" required>
+      
+      <label for="animalNome">Nome do Animal:</label>
+      <input type="text" id="animalNome" required>
+      
+      <label for="idade">Idade do Animal:</label>
+      <input type="number" id="idade" required>
+      
+      <label for="porte">Porte do Animal:</label>
+      <select id="porte" required>
+        <option value="pequeno">Pequeno</option>
+        <option value="médio">Médio</option>
+        <option value="grande">Grande</option>
+      </select>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+    
+    <div id="clientesContainer"></div>
+  </section>
+  <div class="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,101.3C320,85,400,43,480,26.7C560,11,640,21,720,58.7C800,96,880,160,960,160C1040,160,1120,96,1200,74.7C1280,53,1360,75,1400,85.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+    </svg>
+    <div class="final-footer">
+      <a href="#" class="btn"><i class="fab fa-facebook"></i> facebook</a>
+      <a href="#" class="btn"><i class="fab fa-twitter"></i> twitter</a>
+      <a href="#" class="btn"><i class="fab fa-instagram"></i> instagram</a>
+      <a href="#" class="btn"><i class="fab fa-linkedin"></i> likedin</a>
+      <a href="#" class="btn"><i class="fab fa-pinterest"></i> pinterest</a>
+    </div>
+  </div>
+  <script src="/JavaScript/script.js"></script>
+  <script src="/JavaScript/Navbar.js"></script>
+</body>
+</html>
